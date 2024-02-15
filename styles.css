@@ -1,0 +1,262 @@
+body {
+   font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+
+header {
+    background-color: #280b4e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+}
+
+/* Add this to your styles.css file */
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.glass-morphism {
+    background: rgb(255 233 234 / 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    text-align: center;
+    padding: 40px 10px;
+    background-color: rgb(255 233 234 / 90%);
+}
+
+.skills h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skills i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.skills li.animate {
+    opacity: 0;
+}
+
+.skills li.animate:hover {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+      text-align: center;
+      padding: 20px;
+    }
+
+
+
+
+/* Container for projects */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Individual project item */
+.project {
+    flex: 0 1 calc(30% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(255 233 234 / 90%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Title of the project */
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description of the project */
+.project p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Image within the project */
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the project container */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the project image */
+.project:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Media query for small devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    .project {
+        flex: 0 1 calc(100% - 20px);
+    }
+}
+
+/* Media query for medium devices (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .project {
+        flex: 0 1 calc(33.33% - 20px);
+    }
+}
+
+/* Media query for large devices (992px to 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .project {
+        flex: 0 1 calc(25% - 20px);
+    }
+}
+
+/* Media query for laptops and larger devices (1200px and above) */
+@media screen and (min-width: 1200px) {
+}
+
+
+.resume-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.resume-link:hover {
+    background: #2980b9;
+}
+
+
+.animate {
+    animation: fadeIn 1s ease forwards;
+}
+
+ footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+  /* Contact Section Styles */
+    section.contact {
+      background-color: #333;
+      color: #fff;
+      padding: 40px;
+    }
+
+    section.contact a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    section.contact a.email {
+      background-color: #3498db;
+    }
+
+    section.contact a.linkedin {
+      background-color: #0077b5;
+    }
+
+    section.contact a:hover {
+      background-color: #555;
+    }
+
+#typed-output{
+ color: rgb(237 6 166);
+}
